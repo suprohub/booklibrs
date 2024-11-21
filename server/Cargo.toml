@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41", features = ["fs", "macros", "rt-multi-thread"] }
+serde.workspace = true
+log.workspace = true
+simple_logger.workspace = true
+zstd.workspace = true
+
+projcore = { path = "../projcore" }
+
+axum = "0.7"

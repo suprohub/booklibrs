@@ -1,0 +1,21 @@
+
+[workspace]
+resolver = "2"
+members = [
+    "projcore",
+    "server",
+    "app"
+]
+
+[workspace.dependencies]
+serde = "1.0"
+log = "0.4"
+simple_logger = "5.0"
+zstd = "0.13"
+bincode = { version = "2.0.0-rc.3", features = ["derive"] }
+
+[profile.release]
+lto = true          # Enable Link Time Optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations.
+panic = "abort"     # Abort on panic
+strip = true        # Automatically strip symbols from the binary.

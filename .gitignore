@@ -1,0 +1,6 @@
+/target
+/books
+/_builds
+*.keystore
+*.lock
+*.bin

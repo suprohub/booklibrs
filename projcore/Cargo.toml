@@ -1,0 +1,12 @@
+[package]
+name = "projcore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = "1.41"
+serde.workspace = true
+log.workspace = true
+simple_logger.workspace = true
+zstd.workspace = true
+bincode.workspace = true
