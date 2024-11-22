@@ -39,4 +39,6 @@ build-all: apk
 	rm -rf _builds/booklibrs_web
 	mv app/dist _builds/booklibrs_web
 	cp _builds/booklibrs_web docs -r
+	cd docs && sed -i 's/\/app/\/booklibrs\/app/g' *.js
+	cd docs && sed -i 's/\/app/\/booklibrs\/app/g' *.html
 	echo All builds was successfull!
