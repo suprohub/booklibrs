@@ -38,4 +38,5 @@ build-all: apk
 	cd app && trunk build --release
 	rm -rf _builds/booklibrs_web
 	mv app/dist _builds/booklibrs_web
+	cp _builds/booklibrs_web docs -r
 	echo All builds was successfull!
