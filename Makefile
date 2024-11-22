@@ -38,6 +38,7 @@ build-all: apk
 	cd app && trunk build --release
 	rm -rf _builds/booklibrs_web
 	mv app/dist _builds/booklibrs_web
+	rm -rf docs
 	cp _builds/booklibrs_web docs -r
 	cd docs && sed -i 's/\/app/\/booklibrs\/app/g' *.js
 	cd docs && sed -i 's/\/app/\/booklibrs\/app/g' *.html

@@ -11,9 +11,9 @@
 
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
-<script type="module" nonce="e5clX41Ymb1KxB9tuHq0pA==">
-import init, * as bindings from '/booklibrs/booklibrs/app-403aa3c2a89e86b2.js';
-const wasm = await init('/booklibrs/booklibrs/app-403aa3c2a89e86b2_bg.wasm');
+<script type="module" nonce="N6B5LX6VectvO0MbCBk+Lw==">
+import init, * as bindings from '/booklibrs/app-403aa3c2a89e86b2.js';
+const wasm = await init('/booklibrs/app-403aa3c2a89e86b2_bg.wasm');
 
 
 window.wasmBindings = bindings;
@@ -128,8 +128,8 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
         }
     </style>
 
-<link rel="modulepreload" href="/booklibrs/booklibrs/app-403aa3c2a89e86b2.js" crossorigin=anonymous integrity="sha384-0dYKPlWY9blcQO0v073ockDiNeuqmPkOJ5qVwWbCoYL+xRfG6DPCDl1Y/Z0BGUbO">
-<link rel="preload" href="/booklibrs/booklibrs/app-403aa3c2a89e86b2_bg.wasm" crossorigin=anonymous integrity="sha384-2jq1FvFwLcNleI54DK2NXNYusBYY9ChjzSM8pN5Uba9G5cLzygzu45kFVVoMs67l" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/booklibrs/app-403aa3c2a89e86b2.js" crossorigin=anonymous integrity="sha384-0dYKPlWY9blcQO0v073ockDiNeuqmPkOJ5qVwWbCoYL+xRfG6DPCDl1Y/Z0BGUbO">
+<link rel="preload" href="/booklibrs/app-403aa3c2a89e86b2_bg.wasm" crossorigin=anonymous integrity="sha384-2jq1FvFwLcNleI54DK2NXNYusBYY9ChjzSM8pN5Uba9G5cLzygzu45kFVVoMs67l" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
